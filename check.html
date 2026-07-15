@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📩 Check Replies</title>
+  <style>
+    * {box-sizing:border-box; font-family:Arial,sans-serif;}
+    body {max-width:700px; margin:2rem auto; padding:0 1.5rem; background:#f0f4f8;}
+    .card {background:white; padding:1.5rem; border-radius:8px; box-shadow:0 2px 8px #00000015; margin-bottom:1.5rem;}
+    input {width:100%; padding:0.8rem; margin:0.5rem 0; border-radius:6px; border:1px solid #ccc;}
+    button {padding:0.7rem 1.5rem; background:#9b59b6; color:white; border:none; border-radius:6px; cursor:pointer;}
+    .reply-item {padding:0.8rem; background:#f8f9fa; border-radius:4px; margin:0.6rem 0;}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>📩 Check Replies to Your Message</h1>
+    <p>Paste your unique Message ID below to view replies — no login needed.</p>
+    <form action="/check-load" method="POST">
+      <input type="text" name="msgId" placeholder="Enter your Message ID..." required>
+      <button>View Replies</button>
+    </form>
+  </div>
+</body>
+</html>

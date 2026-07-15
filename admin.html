@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🔒 Admin — Reply Panel</title>
+  <style>
+    * {box-sizing:border-box; font-family:Arial,sans-serif;}
+    body {max-width:700px; margin:2rem auto; padding:0 1.5rem; background:#1a1a1a; color:#fff;}
+    .card {background:#2b2b2b; padding:1.5rem; border-radius:8px; margin-bottom:1.5rem;}
+    input, textarea {width:100%; padding:0.8rem; margin:0.5rem 0; border-radius:6px; border:none; font-size:1rem;}
+    button {padding:0.7rem 1.5rem; background:#27ae60; color:white; border:none; border-radius:6px; cursor:pointer; font-weight:bold;}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>🔒 Private Reply Panel — Only You</h1>
+    <p>Enter message ID to load and reply.</p>
+    <form action="/admin-load" method="POST">
+      <input type="text" name="msgId" placeholder="Paste Message ID here..." required>
+      <button>Load Message</button>
+    </form>
+  </div>
+</body>
+</html>
